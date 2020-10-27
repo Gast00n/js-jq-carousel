@@ -16,6 +16,17 @@ $(document).ready( function() {
     });
 
 
+    // BONUS - Movimento con le frecce
+    $(document).keydown(function(event) {
+
+        if (event.keyCode == 37 ) {
+            //Freccia Sinistra - codice 37
+            arrowFunc('prev');
+        } else if ( event.keyCode == 39 ) {
+            //Freccia Destra - codice 39
+            arrowFunc('next');
+        }
+    });
 
 }); //Fine del Ready
 

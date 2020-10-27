@@ -5,6 +5,7 @@
 }
 
 .main {
+    color: tomato;
     width: 1200px;
     margin: 100px auto;
     display: flex;
@@ -67,3 +68,6 @@ li.active {
     cursor: pointer;
 }
 
+li.active {
+    color: tomato;
+}
