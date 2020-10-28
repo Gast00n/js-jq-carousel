@@ -28,6 +28,27 @@ $(document).ready( function() {
         }
     });
 
+    //Navigation with Dots
+
+    $('.dots-menu li').click( function() {
+
+        var imgActive = $('.box img.active');
+        var dotActive = $('.dots-menu li.active');
+
+        //Reset Immagini Active Acquisite
+        imgActive.removeClass('active');
+        dotActive.removeClass('active');
+
+        var select = $(this);
+        var index = select.index(); //Assegno indici da 0 a lenght - 1 a tutti gli elementi di questo tipo
+
+        select.addClass('active');
+        
+        //Select img by Index
+        $('.box img').eq(index).addClass('active'); //eq o equal, aggiunge un confronto tra l'indice espresso in Index e l'immagine espressa
+
+    });
+
 }); //Fine del Ready
 
 
